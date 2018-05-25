@@ -26,6 +26,7 @@
                 @if (Auth::check())
                     <a href="{{ url('/home') }}">Home</a>
                 @else
+                    <a href="{{ url('/') }}">Search Hotels</a>
                     <a href="{{ url('/login') }}">Login</a>
                     <a href="{{ url('/register') }}">Register</a>
                 @endif
@@ -35,7 +36,7 @@
     <div class="row">
         <div id="divLoading"></div>
         <p style="font-weight: bold; text-align: center">
-            Ssearch Hotels
+            Search Hotels
         </p>
         <hr>
 
